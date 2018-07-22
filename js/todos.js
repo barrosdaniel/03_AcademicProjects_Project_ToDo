@@ -4,7 +4,7 @@ $('ul').on('click', 'li', function(){
     $(this).toggleClass('completed');
 });
 
-// Delete todo when clicked on X
+// Delete todo when clicked on trash can
 $('ul').on('click', 'span', function(event){
     $(this).parent().fadeOut(500, function(){
         $(this).remove();
@@ -17,11 +17,11 @@ $('input[type="text"]').on('keypress', function(event){
     if (event.which === 13) {
         var itemToAdd = $(this).val();
         $(this).val('');
-        $('ul').append('<li><span> X </span> ' + itemToAdd + '</li>');
+        $('ul').append('<li><span><i class="fas fa-trash-alt"></i></span> ' + itemToAdd + '</li>');
     }
 });
 
 // When clicked, "+" button shows "Add new activity" input field
 $('i#plus').on('click', function(){
-    $('input[type="text"]').toggleClass('visible');
-})
+    $('input[type="text"]').fadeToggle();
+});
