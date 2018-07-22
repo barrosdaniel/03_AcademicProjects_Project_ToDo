@@ -1,11 +1,26 @@
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(#2980b9, #f7f7f7);
+}
+
+#background {
+    width: 500px;
+    border: 2px solid gray;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: #eee;
 }
 
 #container {
     width:  360px;
-    margin: 100px auto;
+    margin: 60px auto;
     background-color: #f7f7f7;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
