@@ -20,3 +20,8 @@ $('input[type="text"]').on('keypress', function(event){
         $('ul').append('<li><span> X </span> ' + itemToAdd + '</li>');
     }
 });
+
+// When clicked, "+" button shows "Add new activity" input field
+$('i#plus').on('click', function(){
+    $('input[type="text"]').toggleClass('visible');
+})

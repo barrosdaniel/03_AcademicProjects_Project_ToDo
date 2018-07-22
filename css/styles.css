@@ -35,6 +35,11 @@ h1 {
     font-weight: normal;
 }
 
+i#plus {
+    float: right;
+}
+
+
 input {
     font-size: 18px;
     background-color: #f7f7f7;
@@ -43,6 +48,11 @@ input {
     line-height: 100%;
     padding: 13px 13px 13px 20px;
     box-sizing: border-box;
+    display: none;
+}
+
+.visible {
+    display: inherit;
 }
 
 input:focus {
